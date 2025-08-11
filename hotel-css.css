@@ -22,7 +22,7 @@ h1 {
 }
 
 p {
-    color: #FDF7ED;
+    color: var(--paragraph);
     font-family: "Libertinus Serif", serif;
     font-weight: 400;
     font-style: normal;
