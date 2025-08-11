@@ -1,0 +1,87 @@
+/* Universal styles */
+:root {
+    --header-h1: #FFC05C;
+    --header-h2: #FDF7ED;
+    --paragraph: #FDF7ED;
+    --background: #816C61;
+    --opacity-fade: rgba(0, 0, 0, 0.4);
+    --section-content: #413839;
+}
+
+html {
+    font-size: 16px; /* Base font size */
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--header-h1);
+    font-family: "Libertinus Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+p {
+    color: var(--paragraph);
+    font-family: "Libertinus Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+
+.flex-container p, .flex-container h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.flex-container h2 {
+    color: var(--header-h2);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.reviews {
+    /* Center content inside each section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem; /* Add space below the h1 */
+}
+
+.hotel {
+    background-image: linear-gradient(var(--opacity-fade), var(--opacity-fade)), url('resources/hotel.jpg');
+
+    /* Background size for each section */
+    height: 600px; 
+    min-height: 300px; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    /* Border radius and box shadow for each section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--opacity-fade);
+
+    /* Center content inside each section */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem; /* Add space above the content */
+}
+
+.hotel h1 {
+    color: var(--header-h1);
+    text-align: center;
+    margin: 0rem 0rem 3rem 0rem; /* Add space above the h1 */
+}
